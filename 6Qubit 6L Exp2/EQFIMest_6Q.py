@@ -126,7 +126,7 @@ def Est_EQFIM(params,paramIdx,Qsamples):
     # No. of phiF = 4R = 2*nTrails
     # paramIdx: list of length 2
     R = 1
-    Beta = 0.58
+    Beta = 0.56
     nTrails = 2*R
     U = []
     V = []

@@ -1,5 +1,6 @@
 # 2-QNSCD
----
+
+Supervised learning from quantum data using 2-QNSCD 
 
 **Authors:** Mohammad Aamir Sohail, Mohsen Heidari Khoozani, S. Sandeep Pradhan  
 **arXiv ID:** [2407.13858](https://arxiv.org/abs/2407.13858)  

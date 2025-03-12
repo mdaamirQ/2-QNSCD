@@ -90,6 +90,20 @@ Below is an example structure for an experimental folder along with the top-leve
 4. **/Beta 3Qubit 3L/**
    Contains file for illustrating the performance of 2-QNSCD for different regularization parameters. 
 
+## Installation
+
+1. **Requirements:**  
+   - Python 3.11+  
+   - Quantum simulation libraries (e.g., Qiskit, PennyLane)  
+   - Standard libraries: NumPy, SciPy, matplotlib
+
+2. **Setup:**  
+   Clone the repository and install dependencies:
+   ```bash
+   git clone https://github.com/yourusername/2-QNSCD.git
+   cd 2-QNSCD
+   pip install -r requirements.txt
+
 ---
 
 

@@ -66,7 +66,43 @@ This repository is organized to facilitate running experiments on variational qu
 
 Below is an example structure for one experimental folder along with the top-level organization:
 
+## How to Navigate and Use
 
+1. **/code/XQubit YL ExpZ/**  
+   This folder contains the main code for a specific experiment:
+   - **XQubit YL ExpZ.ipynb:**  
+     Open this Jupyter Notebook to run the full experiment, covering both learning and testing phases.
+   - **EQFIMest_XQ.py:**  
+     Computes the EQFIM estimate for the PQC used.
+   - **GRADest_XQ.py:**  
+     Computes the gradient estimate for the PQC used.
+   - **model_Xqubit.py:**  
+     Specifies all model parameters including the number of parameters, number of qubits, PQC structure, loss function definition, and measurement observables.
+   - **globalVars.py:**  
+     Contains global variables used consistently across all experiments.
+
+2. **/data/**  
+   Contains datasets or simulation outputs used in the experiments.
+
+3. **/figures/**  
+   Contains high-resolution figures and plots generated during the experiments.
+
+
+## Usage Instructions
+
+For users who want to run the numerical experiments:
+
+1. **Requirements:**  
+   - Python 3.8+  
+   - Quantum simulation libraries (e.g., Qiskit, PennyLane)  
+   - Standard libraries: NumPy, SciPy, matplotlib
+
+2. **Setup:**  
+   Clone the repository and install dependencies:
+   ```bash
+   git clone https://github.com/yourusername/2-QNSCD.git
+   cd 2-QNSCD
+   pip install -r requirements.txt
 ---
 
 

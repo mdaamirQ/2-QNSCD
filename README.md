@@ -10,23 +10,28 @@
 
 ## Overview
 
-This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Descent (2-QNSCD)** optimization method, a novel algorithm for training parameterized quantum circuits within variational quantum algorithms (VQAs). Variational quantum algorithms are among the most promising approaches for near-term quantum computing, but standard gradient-based methods face challenges due to measurement noise and the no-cloning principle. This work addresses these issues by leveraging the natural geometry of quantum state space and updating only selected coordinate pairs in each iteration, thereby reducing computational overhead and sample complexity.
+This paper introduces a novel framework for optimizing variational quantum circuits by harnessing the intrinsic geometry of quantum state space. At its core, the work defines an ensemble-based quantum Fisher information metric (E-QFIM) that quantifies the sensitivity of a parameterized quantum circuit to changes in its parameters—without the need for full-state tomography. Leveraging this metric, the authors develop the Quantum Natural Stochastic Pairwise Coordinate Descent (2-QNSCD) algorithm, which updates only two randomly selected parameters per iteration using a sparse and unbiased estimator of the metric tensor. This approach dramatically reduces both the measurement overhead and computational cost typically associated with gradient-based methods for learning from quantum data.
 
+The paper provides rigorous theoretical guarantees, including exponential convergence under mild assumptions, and demonstrates through extensive numerical experiments (e.g., on binary classification tasks) that 2-QNSCD converges faster compared to standard randomized stochastic gradient descent. 
 
 <details>
-  <summary> Key Contributions</summary>
+  <summary> Major Contributions</summary>
 
-- **Novel Optimization Strategy:**  
-  Introduces a quantum natural gradient method that exploits the curved geometry of the quantum state space via a novel ensemble-based quantum information metric tensor.
+- **Ensemble-Based Quantum Metric (E-QFIM):**  
+  Introduces a new metric that measures the closeness between ensembles of pure states. This metric can be efficiently estimated without full tomography, overcoming the limitations of the Bures metric.
 
-- **Pairwise Coordinate Updates:**  
-  Instead of computing full gradients, the algorithm updates only a pair of coordinates per iteration, significantly reducing the computational and sampling burden.
+- **Sparse, Unbiased Estimator:**  
+  Develop an efficient sequential measurement strategy using mid-circuit measurements to obtain a highly sparse and unbiased estimator of the E-QFIM. Only a constant number of measurements are needed per iteration.
 
-- **Sparse Unbiased Estimator:**  
-  Develops a highly sparse, unbiased estimator for the quantum metric tensor using a quantum circuit whose gate complexity is comparable (Θ(1) times) to that of the parameterized circuit. This approach relies on single-shot quantum measurements, avoiding the need for multiple copies of quantum data.
+- **Quantum Natural Stochastic Pairwise Coordinate Descent (2-QNSCD):**  
+  Presents an optimization algorithm that updates only two randomly chosen parameters per iteration. This results in constant sample complexity and computational cost per iteration without requiring multiple copies of the quantum data.
 
-- **Theoretical & Numerical Validation:**  
-  Provides rigorous exponential convergence guarantees and extensive numerical experiments that show improved convergence speed, robustness against measurement noise, and scalability to larger quantum systems.
+- **Exponential Convergence Guarantee:**  
+  Provides a theoretical analysis showing that 2-QNSCD achieves an exponential rate of convergence under mild assumptions. A new quadratic geometric information (QGI) inequality is introduced to generalize classical convergence criteria.
+
+- **Empirical Validation:**  
+  Demonstrates through experiments on a binary classification task that 2-QNSCD converges faster and more reliably than standard stochastic gradient descent, highlighting its robustness and data efficiency.
+
 
 </details>
 
@@ -100,7 +105,7 @@ Below is an example structure for an experimental folder along with the top-leve
 2. **Setup:**  
    Clone the repository and install dependencies:
    ```bash
-   git clone https://github.com/yourusername/2-QNSCD.git
+   git clone https://github.com/mdaamirQ/2-QNSCD.git
    cd 2-QNSCD
    pip install -r requirements.txt
 

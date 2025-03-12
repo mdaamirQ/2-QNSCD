@@ -55,6 +55,21 @@ This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Desce
 
 ---
 
+## Repository Structure
+
+This repository is organized to facilitate running experiments on variational quantum circuits. Each experimental folder follows the naming convention:
+
+**XQubit YL ExpZ**  
+- **X**: Number of qubits used in the experiment  
+- **Y**: Number of layers in the Parameterized Quantum Circuit (PQC)  
+- **Z**: Experiment identifier (e.g., different initializations or PQC structures)
+
+Below is an example structure for one experimental folder along with the top-level organization:
+
+
+---
+
+
 ## How to Cite
 
 If you use or refer to this work in your research, please cite it as follows:

@@ -1,7 +1,7 @@
 # Quantum Natural Stochastic Pairwise Coordinate Descent (2-QNSCD)
 
 **Authors:** Mohammad Aamir Sohail, Mohsen Heidari Khoozani, S. Sandeep Pradhan  
-**ArXiv ID:** [2407.13858](https://arxiv.org/abs/2407.13858)  
+**arXiv ID:** [2407.13858](https://arxiv.org/abs/2407.13858)  
 **Date:** July 2024 (see arXiv for version details)
 
 ---
@@ -10,7 +10,6 @@
 
 This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Descent (2-QNSCD)** optimization method, a novel algorithm for training parameterized quantum circuits within variational quantum algorithms (VQAs). Variational quantum algorithms are among the most promising approaches for near-term quantum computing, but standard gradient-based methods face challenges due to measurement noise and the no-cloning principle. This work addresses these issues by leveraging the natural geometry of quantum state space and updating only selected coordinate pairs in each iteration, thereby reducing computational overhead and sample complexity.
 
----
 
 <details>
   <summary> Key Contributions</summary>
@@ -33,7 +32,7 @@ This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Desce
   <summary> Paper Structure</summary>
 
 1. **Introduction:**  
-   Motivation behind the method, challenges of variational quantum circuit optimization, and limitations of standard gradient descent methods.
+   The motivation behind the method, challenges of variational quantum circuit optimization, and limitations of standard gradient descent methods.
 
 2. **Background and Preliminaries:**  
    Overview of variational quantum algorithms, quantum state geometry (quantum geometric tensor, Fubini–Study metric), and existing optimization methods.

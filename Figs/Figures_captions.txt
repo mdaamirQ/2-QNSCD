@@ -1,0 +1,15 @@
+1. Comparison GD vs QNGD
+- The figure compare the performance of GD and QNGD in finding the ground state of the Pauli-X matrix. 
+- QNGD escapes saddle points and reaches the global minimum more efficiently than GD.
+
+2. Overview of the Quantum Learning Model
+- Quantum learning model consist of input quantum data (associated with classical labels) that are processed using a parameterized quantum circuit 
+$U(\param)$, followed by a POVM $\set{\Lambda_{\yhat}}$ to predict labels. The model aims to find an optimal parameter
+by minimizing the average per-sample expected loss $\bar{\Loss}(\param)$.
+
+3. Performance of the porposed 2-QNSCD algorithm
+- The figure consists of plots of 2-QNSCD convergence for 3, 4, 5, and 6 qubits. 
+- The results demonstrate that 2-QNSCD achieves faster convergence and demonstrates the ability to avoid saddle points and/or local minima.
+
+4. 2-Qubit synthetic dataset
+- The figure depicts the synthetic dataset used in the paper for 2 qubits case. 

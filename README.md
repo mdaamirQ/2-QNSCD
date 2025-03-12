@@ -13,7 +13,7 @@ This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Desce
 ---
 
 <details>
-  <summary>➡️ Key Contributions</summary>
+  <summary> Key Contributions</summary>
 
 - **Novel Optimization Strategy:**  
   Introduces a quantum natural gradient method that exploits the curved geometry of the quantum state space via an ensemble-based quantum information metric tensor.
@@ -28,10 +28,9 @@ This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Desce
   Provides rigorous exponential convergence guarantees and extensive numerical experiments that show improved convergence speed, robustness against measurement noise, and scalability to larger quantum systems.
 
 </details>
----
 
 <details>
-  <summary>➡️ Paper Structure</summary>
+  <summary> Paper Structure</summary>
 
 1. **Introduction:**  
    Motivation behind the method, challenges of variational quantum circuit optimization, and limitations of standard gradient descent methods.

@@ -64,45 +64,32 @@ This repository is organized to facilitate running experiments on variational qu
 - **Y**: Number of layers in the Parameterized Quantum Circuit (PQC)  
 - **Z**: Experiment identifier (e.g., different initializations or PQC structures)
 
-Below is an example structure for one experimental folder along with the top-level organization:
+Below is an example structure for an experimental folder along with the top-level organization:
 
-## How to Navigate and Use
+### How to Navigate and Use
 
-1. **/code/XQubit YL ExpZ/**  
+1. **/data_generation/**  
+   Run the jupyter notebook to generate a synthetic dataset for both the learning and testing phases. 
+
+2. **/XQubit YL ExpZ/**  
    This folder contains the main code for a specific experiment:
    - **XQubit YL ExpZ.ipynb:**  
-     Open this Jupyter Notebook to run the full experiment, covering both learning and testing phases.
+     Open this Jupyter Notebook to run the full experiment, covering both the learning and testing phases.
    - **EQFIMest_XQ.py:**  
      Computes the EQFIM estimate for the PQC used.
    - **GRADest_XQ.py:**  
      Computes the gradient estimate for the PQC used.
    - **model_Xqubit.py:**  
-     Specifies all model parameters including the number of parameters, number of qubits, PQC structure, loss function definition, and measurement observables.
+     Specifies all model parameters including the number of parameters, number of qubits, PQC structure, and measurement observables.
    - **globalVars.py:**  
      Contains global variables used consistently across all experiments.
 
-2. **/data/**  
-   Contains datasets or simulation outputs used in the experiments.
-
-3. **/figures/**  
+3. **/Figs/**  
    Contains high-resolution figures and plots generated during the experiments.
 
+4. **/Beta 3Qubit 3L/**
+   Contains file for illustrating the performance of 2-QNSCD for different regularization parameters. 
 
-## Usage Instructions
-
-For users who want to run the numerical experiments:
-
-1. **Requirements:**  
-   - Python 3.8+  
-   - Quantum simulation libraries (e.g., Qiskit, PennyLane)  
-   - Standard libraries: NumPy, SciPy, matplotlib
-
-2. **Setup:**  
-   Clone the repository and install dependencies:
-   ```bash
-   git clone https://github.com/yourusername/2-QNSCD.git
-   cd 2-QNSCD
-   pip install -r requirements.txt
 ---
 
 

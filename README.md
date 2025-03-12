@@ -17,7 +17,7 @@ This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Desce
   <summary> Key Contributions</summary>
 
 - **Novel Optimization Strategy:**  
-  Introduces a quantum natural gradient method that exploits the curved geometry of the quantum state space via an ensemble-based quantum information metric tensor.
+  Introduces a quantum natural gradient method that exploits the curved geometry of the quantum state space via a novel ensemble-based quantum information metric tensor.
 
 - **Pairwise Coordinate Updates:**  
   Instead of computing full gradients, the algorithm updates only a pair of coordinates per iteration, significantly reducing the computational and sampling burden.
@@ -43,10 +43,10 @@ This paper introduces the **Quantum Natural Stochastic Pairwise Coordinate Desce
    Detailed description of the algorithm’s design, update rules, and construction of the sparse metric tensor estimator.
 
 4. **Convergence Analysis:**  
-   Theoretical analysis demonstrating exponential convergence and complexity benefits over full gradient descent.
+   Theoretical analysis demonstrating faster convergence and complexity benefits over randomized stochastic gradient descent.
 
 5. **Numerical Experiments:**  
-   Simulation results showing faster convergence, noise robustness, and favorable scaling with system size.
+   Simulation results show faster convergence for different system sizes and PQC models.
 
 6. **Conclusion and Future Work:**  
    Summary of benefits and discussion of potential research directions.
@@ -66,7 +66,7 @@ This repository is organized to facilitate running experiments on variational qu
 
 Below is an example structure for an experimental folder along with the top-level organization:
 
-### How to Navigate and Use
+### Navigation
 
 1. **/data_generation/**  
    Run the jupyter notebook to generate a synthetic dataset for both the learning and testing phases. 
@@ -93,7 +93,7 @@ Below is an example structure for an experimental folder along with the top-leve
 ---
 
 
-## How to Cite
+## Citation
 
 If you use or refer to this work in your research, please cite it as follows:
 

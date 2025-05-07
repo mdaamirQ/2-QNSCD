@@ -74,26 +74,26 @@ Below is an example structure for an experimental folder along with the top-leve
 ### Navigation
 
 1. **/data_generation/**  
-   Run the jupyter notebook to generate a synthetic dataset for both the learning and testing phases. 
+   Run the Jupyter notebook to generate a synthetic dataset for both the learning and testing phases. 
 
 2. **/XQubit YL ExpZ/**  
    This folder contains the main code for a specific experiment:
    - **XQubit YL ExpZ.ipynb:**  
-     Open this Jupyter Notebook to run the full experiment, covering both the learning and testing phases.
+     Main Jupyter Notebook file covering both the learning and testing phases.
    - **EQFIMest_XQ.py:**  
      Computes the EQFIM estimate for the PQC used.
    - **GRADest_XQ.py:**  
      Computes the gradient estimate for the PQC used.
    - **model_Xqubit.py:**  
-     Specifies all model parameters including the number of parameters, number of qubits, PQC structure, and measurement observables.
+     Specifies all model parameters, including the number of parameters, number of qubits, PQC structure, and measurement observables.
    - **globalVars.py:**  
-     Contains global variables used consistently across all experiments.
+     Defines global variables that are used consistently across all experiments.
 
 3. **/Figs/**  
    Contains high-resolution figures and plots generated during the experiments.
 
 4. **/Beta 3Qubit 3L/**
-   Contains file for illustrating the performance of 2-QNSCD for different regularization parameters. 
+   Contains files for illustrating the performance of 2-QNSCD for different regularization parameters. 
 
 ## Installation
 

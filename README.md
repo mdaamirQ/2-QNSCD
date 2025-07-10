@@ -5,8 +5,9 @@
 **Authors:** Mohammad Aamir Sohail, Mohsen Heidari Khoozani, S. Sandeep Pradhan  
 Journal: [npj Quantum Information](https://www.nature.com/articles/s41534-025-01047-4)
 
-Date: July 2024 (see arXiv for version details)
-arXiv ID: [2407.13858](https://arxiv.org/abs/2407.13858) 
+Date: July 2024 
+
+arXiv ID: [2407.13858](https://arxiv.org/abs/2407.13858) (see arXiv for version details)
 
 ---
 

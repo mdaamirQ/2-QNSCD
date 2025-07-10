@@ -3,9 +3,9 @@
 ## Supervised learning from quantum data using quantum natural stochastic pairwise coordinate descent (2-QNSCD) optimization algorithm.
 
 **Authors:** Mohammad Aamir Sohail, Mohsen Heidari Khoozani, S. Sandeep Pradhan  
-**arXiv ID:** [2407.13858](https://arxiv.org/abs/2407.13858)  
+**Journal:** [npj Quantum Information](https://www.nature.com/articles/s41534-025-01047-4)
 **Date:** July 2024 (see arXiv for version details)
-
+**arXiv ID:** [2407.13858](https://arxiv.org/abs/2407.13858) 
 ---
 
 ## Overview
@@ -117,9 +117,13 @@ Below is an example structure for an experimental folder along with the top-leve
 If you use or refer to this work in your research, please cite it as follows:
 
 ```bibtex
-@article{sohail2024quantum,
-  title={Quantum Natural Stochastic Pairwise Coordinate Descent},
-  author={Sohail, Mohammad Aamir and Khoozani, Mohsen Heidari and Pradhan, S. Sandeep},
-  journal={arXiv preprint arXiv:2407.13858},
-  year={2024}
+@article{sohail2025quantum,
+  title={Quantum natural stochastic pairwise coordinate descent},
+  author={Sohail, Mohammad Aamir and Heidari, Mohsen and Pradhan, S Sandeep},
+  journal={npj Quantum Information},
+  volume={11},
+  number={1},
+  pages={109},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
